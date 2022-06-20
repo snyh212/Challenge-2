@@ -4,6 +4,10 @@
     --blwh: #dae4ff;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -33,18 +37,19 @@ header h1{
     padding: 17px;
 }
 
-header button {
-    justify-content: end;
-    text-align: right;
-}
-
 header li {
     display: inline-block;
-    color: var(--ofwh);
-    padding: 20px;
-    border-style: solid;
-    border-width: 1.5px;
+}
+
+header button {
+    justify-content: end;
+    padding: 18px;
+    background-color: var(--blu);
     border-color: var(--ofwh);
+}
+
+header a{
+    color: var(--ofwh);
 }
 
 main figure {
