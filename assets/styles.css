@@ -23,7 +23,6 @@ header {
     height: 60px;
     width: 100%;
     background-color: var(--blu);
-
     display: flex;
 }
 
@@ -34,20 +33,23 @@ header h1{
     padding: 17px;
 }
 
-header ul {
+header button {
     justify-content: end;
+    text-align: right;
 }
 
 header li {
     display: inline-block;
     color: var(--ofwh);
     padding: 20px;
-    border-style: outset;
+    border-style: solid;
     border-width: 1.5px;
     border-color: var(--ofwh);
 }
 
-
+main figure {
+    width: fit-content;
+}
 
 footer {
     text-align: center;
