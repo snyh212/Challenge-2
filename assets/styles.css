@@ -1,5 +1,7 @@
 :root {
     --blu: #1111bc;
+    --ofwh: #fdf2dc;
+    --blwh: #dae4ff;
 }
 
 *{
@@ -11,7 +13,7 @@ ul {
 }
 
 body {
-    background: linear-gradient(#fdf2dc, #e9efff);
+    background: linear-gradient(var(--ofwh), var(--blwh) );
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     position: relative;
@@ -21,15 +23,31 @@ header {
     height: 60px;
     width: 100%;
     background-color: var(--blu);
+
+    display: flex;
+}
+
+header h1{
+    display: inline-block;
+    flex: 2;
+    font-size: 25px;
+    padding: 17px;
 }
 
 header ul {
-    text-align: right;
+    justify-content: end;
 }
 
 header li {
-    margin: 20px;
+    display: inline-block;
+    color: var(--ofwh);
+    padding: 20px;
+    border-style: outset;
+    border-width: 1.5px;
+    border-color: var(--ofwh);
 }
+
+
 
 footer {
     text-align: center;
