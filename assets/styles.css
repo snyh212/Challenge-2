@@ -4,8 +4,19 @@
     --blwh: #dae4ff;
 }
 
-a:link {
+header a:link {
     text-decoration: none;
+    background-color: var(--blu);
+    color: var(--ofwh);
+    border: 2px solid var(--ofwh);
+    padding: 18px 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: var(--blu);
+    background-color: var(--ofwh);
 }
 
 *{
@@ -35,17 +46,13 @@ header h1{
     flex: 2;
     font-size: 25px;
     padding: 17px;
+    color: var(--ofwh);
 }
 
 header li {
     display: inline-block;
-}
-
-header button {
     justify-content: end;
-    padding: 18px;
-    background-color: var(--blu);
-    border-color: var(--ofwh);
+    padding-top: 2px;
 }
 
 header a{
@@ -53,7 +60,13 @@ header a{
 }
 
 main figure {
-    width: fit-content;
+
+}
+
+
+
+.first {
+
 }
 
 footer {
