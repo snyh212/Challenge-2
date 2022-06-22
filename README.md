@@ -17,10 +17,9 @@ Finally I deployed my finished webpage as a github link to make accessible.
 
 ## Usage
 
+The webpage has a navigation bar linked to the different sections throughout the webpage, as well as links to where to find my projects on Github, LinkIn, and my email address. The projects are also <!-- to be --> embedded to their deployable links, allowing for easy viewing.
 
-
-
-![webpage]("assets\images\Screenshot 2022-06-22 022132.png")
+<img src="assets\images\Screenshot 2022-06-22 022132.png">
 
 ## Credits
 
