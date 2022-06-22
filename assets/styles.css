@@ -9,12 +9,15 @@ header a:link {
     background-color: var(--blu);
     border: 2px solid var(--ofwh);
     padding: 17px 10px;
-    text-decoration: none;
 }
 
 header a:hover {
     color: var(--blu);
     background-color: var(--ofwh);
+}
+
+section a:link {
+    text-decoration: none;
 }
 
 *{
@@ -33,6 +36,8 @@ body {
 
 }
 header {
+    position: sticky;
+    top: 0;
     height: 60px;
     width: 100%;
     background-color: var(--blu);
@@ -74,30 +79,29 @@ aside h2 {
 article {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     color: var(--blu);
-    background-image: url(\digital-marketing-meeting.jpg);
 }
 
 h3 {
     justify-content: flex-start;
 }
-article a {
-}
 
 #first {
-    width: 90%;
+    width: 95%;
+    height: 250px;
+}
+
+article a {
+    width: 50%;
+    height: 250px;
+}
+
+section a {
+    color: var(--blu);
 }
 
 footer {
     text-align: center;
     color: var(--blu);
     font-size:x-large ;
-}
-
-@media (max-width: 566px) {
-    main, aside {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
 }
