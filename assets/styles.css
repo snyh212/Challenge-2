@@ -7,11 +7,9 @@
 header a:link {
     text-decoration: none;
     background-color: var(--blu);
-    color: var(--ofwh);
     border: 2px solid var(--ofwh);
-    padding: 18px 10px;
+    padding: 17px 10px;
     text-decoration: none;
-    display: inline-block;
 }
 
 header a:hover {
@@ -39,47 +37,67 @@ header {
     width: 100%;
     background-color: var(--blu);
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 header h1{
-    display: inline-block;
-    flex: 2;
-    font-size: 35px;
-    padding: 9px;
+    margin: 0px;
+    margin-left: 5px;
     color: var(--ofwh);
-}
-
-header li {
-    display: inline-block;
-    justify-content: end;
-    padding-top: 2px;
+    justify-content: flex-start;
+    flex: 2;
 }
 
 header a{
+    margin: 0px;
+    margin-right: 3px;
     color: var(--ofwh);
 }
 
-main figure {
-
+summary {
+    display: flex;
 }
 
-article {
+main img {
+    flex: 1;
+    max-width: 200px;
+    height: auto;
+    border: 2px solid var(--blu);
+}
+
+aside h2 {
+    flex: 2;
     color: var(--blu);
 }
 
+article {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: var(--blu);
+    background-image: url(\digital-marketing-meeting.jpg);
+}
+
+h3 {
+    justify-content: flex-start;
+}
+article a {
+}
+
 #first {
-    height: 600px;
-    width: 85%;
-    margin-bottom: 25px;
-    border: 2px solid var(--blu);
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-size: cover;
-    background-position: center;
-    background-image: url(assets\images\digital-marketing-meeting.jpg);
+    width: 90%;
 }
 
 footer {
     text-align: center;
     color: var(--blu);
+    font-size:x-large ;
+}
+
+@media (max-width: 566px) {
+    main, aside {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
 }
